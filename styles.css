@@ -1,0 +1,190 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f7f8f8, #003087);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;    background-image: url(Asset/fondoucc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.header {
+    margin-bottom: 30px;
+  
+}
+
+.header img {
+    margin: 0;
+    height: 200px;
+}
+
+.header p {
+    color: #666;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.controls {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controls .c1 {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.controls .c2 {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #be3636;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.controls .c1:hover {
+    background-color: #218838;
+}
+.controls .c2:hover {
+    background-color: #830000;
+}
+
+.output-section {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ajusta el ancho para la sección de salida */   
+    background-color: #003087;
+    border-radius: px;
+    
+}
+
+.group-table {
+    width: 100%;
+    table-layout: fixed; /* Asegura que la tabla tenga un layout fijo */
+
+ 
+
+}
+
+.group-table th, .group-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background: #c1d7f5;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap; /* Evita que los textos se dividan en varias líneas */
+    overflow: hidden; /* Oculta el texto que desborde */
+    text-overflow: ellipsis; /* Añade puntos suspensivos para el texto que desborde */
+}
+
+.group-table th {
+    background: #345aa0;
+}
+
+.group-table .group-name {
+    background-color: #003087;
+    color: #ffffff;
+}
+
+.group {
+    background: #e9f0eb;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+/* Media Queries para ajustes responsivos */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 10px;
+
+    }
+
+    .header img {
+        height: 150px;
+    }
+
+    .header p {
+        font-size: 0.9em;
+    }
+
+    .controls button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .group-table th, .group-table td {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    .group-table th {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+  
+    }
+    .header p {
+        font-size: 0.8em;
+    }
+    .header img {
+        height: 100px;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .controls button {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    .group-table th, .group-table td {
+        font-size: 0.6rem;
+        padding: 3px;
+    }
+
+    .group-table th {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
